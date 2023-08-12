@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 300px;
+    
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    width: 500px;
+    border-radius: 20px;
+    padding: 1px;
+    margin-top: 10px;
+    border: 0.5px solid gray;
+  }
+  
+  .inputtext {
+    width: 93%;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #f0f0f0;
+    padding: 8px;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  .iconcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    border-radius: 20px;
+    background-color: gray;
+  }
+  
+  .icon {
+    color: #f0f0f0;
+  }

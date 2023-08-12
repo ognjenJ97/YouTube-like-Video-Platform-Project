@@ -1,0 +1,17 @@
+.container {
+    margin-left: 30px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  
+  select {
+    width: 150px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: black;
+    color: #d3d3d3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }

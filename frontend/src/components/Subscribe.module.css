@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}

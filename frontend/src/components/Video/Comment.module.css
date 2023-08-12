@@ -1,0 +1,113 @@
+.container {
+    margin: 50px;
+}
+
+
+.container2 {
+    margin: 0px;
+}
+
+.letter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding-top: 5px;
+  }
+
+  .comm {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .comm2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    
+  }
+
+  .comm2 {
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+  }
+
+  .text2 {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .loadMoreButton{
+    color: white;
+    width: 1000px;
+  }
+
+  .likeCounter{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+
+  .like {
+    color: blue;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.noLike {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.containerNewComm {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.containerNewComm input {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: gray;
+  color: white;
+}
+
+.containerNewComm p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.submitDiv {
+  width: 70px;
+  height: 30px;
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

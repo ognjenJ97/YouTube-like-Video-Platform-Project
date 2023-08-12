@@ -1,0 +1,107 @@
+.header {
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 2px solid grey;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+
+}
+
+.text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.text2 {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.text2:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.svg {
+    fill: red !important;
+    width: 80px !important;
+    height: 40px !important;
+  }
+
+.p {
+    margin-top: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.profile {
+    margin-left: 60px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.profile:hover {
+    background-color: rgb(43, 43, 43);
+  }
+
+.profile2 {
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.profile2:hover {
+    background-color: rgb(43, 43, 43);
+  }
+
+.profile3 {
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    font-size: 14px;
+    height: 40px;
+}
+
+
+
+

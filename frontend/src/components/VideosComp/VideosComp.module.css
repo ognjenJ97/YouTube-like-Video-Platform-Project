@@ -1,0 +1,155 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap; 
+    height: 100%;
+}
+
+.container2 {
+    flex-basis: calc(33.33% - 20px); 
+    height: 400px; 
+  }
+
+  .search {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    top: 70px;
+  }
+  
+  .videoRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px; 
+    margin-left: 10px;
+  }
+  
+  .thumbnail {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .thumbnail:hover {
+    border-color: rgba(255, 255, 255, 0.5); 
+  }
+  
+  .thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .info {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 5px;
+  }
+  
+  .channel {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5px;
+
+  }
+
+
+  .infoText {
+    width: 70%;
+    height: 50%;
+    align-items: center;
+    text-align: left; 
+    color: white;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .username {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+  .views {
+    font-size: 14px;
+  }
+
+  .loadmore {
+    width: 100%;
+    height: 50px;
+  }
+
+  .pageNo {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .loadContainer {
+    height: 50px;
+    display: flex;
+    color: white;
+    font-weight: bold; 
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .loadContainer:hover {
+    background-color: blue;
+  }
+
+  .loadContainer2 {
+    height: 50px;
+    display: flex;
+    color: white;
+    font-weight: bold; 
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .loadContainer2:hover {
+    background-color: rgb(93, 0, 0);
+  }
+
+

@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Postavite visinu prema vašim potrebama */
+    background-color: #000000;
+  }
+  
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  
+  .input {
+    width: 400px; /* Postavite širinu prema vašim potrebama */
+    height: 30px; /* Postavite visinu prema vašim potrebama */
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    outline: none;
+  }
+  
+  .container2 p {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .container2 p:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    width: 100px; /* Postavite širinu dugmeta prema vašim potrebama */
+    height: 40px; /* Postavite visinu dugmeta prema vašim potrebama */
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a7a7a7; /* Plava boja - možete promeniti prema vašim željama */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Stil za dugme kada se hoveruje */
+  button:hover {
+    background-color: #0056b3; /* Tamnija nijansa plave */
+  }

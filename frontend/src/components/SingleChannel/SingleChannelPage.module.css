@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;
+    background-color: black
+  }
+  
+  .channels {
+    width: 20%;
+    position: fixed;
+    top: 70px;
+    background-color: black;
+    height: 100%;
+  }
+  
+  .channelSingle {
+    width: 80%;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    padding-top: 10px;
+ }

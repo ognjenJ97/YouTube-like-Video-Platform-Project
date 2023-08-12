@@ -1,6 +1,6 @@
 # YouTube-like Video Platform Project
 
-##This project is a comprehensive exercise that brings together a SQL database, Java backend, and a React frontend to create a smaller version of a YouTube-like video sharing platform. The aim of this exercise is to build a platform where users can upload, comment, like, dislike, subscribe, and unsubscribe, while also offering advanced features like profile editing, video privacy settings, and user administration capabilities.
+## This project is a comprehensive exercise that brings together a SQL database, Java backend, and a React frontend to create a smaller version of a YouTube-like video sharing platform. The aim of this exercise is to build a platform where users can upload, comment, like, dislike, subscribe, and unsubscribe, while also offering advanced features like profile editing, video privacy settings, and user administration capabilities.
 
 ## Features
 
@@ -16,9 +16,9 @@
 
 ## Technology Stack
 
--Backend: The project utilizes Java with a service layer, implementation, repository, DTO objects, and controllers to manage and process user data and requests. The backend server is configured to run on port 8080.
+- Backend: The project utilizes Java with a service layer, implementation, repository, DTO objects, and controllers to manage and process user data and requests. The backend server is configured to run on port 8080.
 
--Frontend: The frontend is built using React, offering a user-friendly interface for uploading, interacting with videos, and managing user accounts.
+- Frontend: The frontend is built using React, offering a user-friendly interface for uploading, interacting with videos, and managing user accounts.
 
 ## Installation
 

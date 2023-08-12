@@ -4,15 +4,15 @@
 
 ## Features
 
--User Interaction: Users can upload videos, leave comments, and interact with videos through likes and dislikes, similar to the functionalities found on popular video-sharing platforms.
+- User Interaction: Users can upload videos, leave comments, and interact with videos through likes and dislikes, similar to the functionalities found on popular video-sharing platforms.
 
--Subscription System: Users can subscribe or unsubscribe from other users' channels to receive notifications and updates about their content.
+- Subscription System: Users can subscribe or unsubscribe from other users' channels to receive notifications and updates about their content.
 
--Profile Management: Users can edit their profile information, updating details such as their username, avatar, and other personal information.
+- Profile Management: Users can edit their profile information, updating details such as their username, avatar, and other personal information.
 
--Video Customization: Video owners have the ability to make their videos private, disable likes, dislikes, or comments on their videos, granting them greater control over their content.
+- Video Customization: Video owners have the ability to make their videos private, disable likes, dislikes, or comments on their videos, granting them greater control over their content.
 
-A-dmin Privileges: Admin users have additional capabilities, including the ability to edit other users' videos (with certain limitations), block videos, and manage user accounts.
+- Admin Privileges: Admin users have additional capabilities, including the ability to edit other users' videos (with certain limitations), block videos, and manage user accounts.
 
 ## Technology Stack
 

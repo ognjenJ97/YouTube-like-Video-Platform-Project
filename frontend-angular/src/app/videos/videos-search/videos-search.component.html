@@ -1,0 +1,28 @@
+<div class="container">
+  <div
+    class="input-group mb-3"
+    style="display: flex; flex-direction: row; width: 500px"
+  >
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Title"
+      aria-label="Recipient's username"
+      aria-describedby="basic-addon2"
+      [(ngModel)]="title"
+    />
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="onSearch()">Search</button>
+    </div>
+  </div>
+
+
+  <div class="video_select">
+    <select [(ngModel)]="selectedSort" (ngModelChange)="onSearch()">
+        <option selected value="2">Views down</option>
+        <option value="1">Views up</option>
+        <option value="4">Newest</option>
+        <option value="3">Oldest</option>
+    </select>
+  </div>
+</div>

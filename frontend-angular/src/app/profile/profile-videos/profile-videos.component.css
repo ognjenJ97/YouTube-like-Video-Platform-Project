@@ -1,0 +1,80 @@
+.container {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+  }
+
+  
+  .thumbnail {
+    height: 180px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out; 
+  }
+
+  .thumbnail:hover {
+    border-color: rgba(79, 79, 79, 0.5); 
+  }
+  
+  .thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-top: 5px;
+    width: 80%;
+    display: inline-block;
+  }
+  
+  .owner-views {
+    width: 20%;
+    display: inline-block;
+  }
+  
+  .owner-views p {
+    margin: 0;
+  }
+
+  .list_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .button {
+    color: black;
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #c9c9c9; /* Nova boja pozadine na hover */
+  }
+
+  .button_block {
+    color: rgb(152, 152, 152);
+    font-size: medium;
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }

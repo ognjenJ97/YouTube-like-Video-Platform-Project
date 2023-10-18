@@ -1,0 +1,36 @@
+<div class="container" *ngIf="isLoged">
+    <div *ngIf="userId" >
+        <h3>Add new video:</h3>
+        <hr>
+        <div class="container_box">
+            <label for="title">Enter title</label>
+            <input [(ngModel)]="title" class="form-control" type="text" id="title" placeholder="Please enter title">    
+        </div>
+    
+        <div class="container_box">
+            <label for="videoUrl">Enter videoUrl</label>
+            <input [(ngModel)]="videoUrl" class="form-control" type="text" id="videoUrl" placeholder="Please enter videoUrl">    
+        </div>
+    
+        <div class="container_box">
+            <label for="thumbnailUrl">Enter thumbnailUrl</label>
+            <input [(ngModel)]="thumbnailUrl" class="form-control" type="text" id="thumbnailUrl" placeholder="Please enter thumbnailUrl">    
+        </div>
+    
+        <div class="container_box">
+            <label for="description">Enter description</label>
+            <input [(ngModel)]="description" class="form-control" type="text" id="description" placeholder="Please enter description">    
+        </div>
+        <div class="container_box">
+            <button type="button" class="btn btn-dark" (click)="onAddVideo()">Add video</button>
+        </div>
+
+    </div>
+    
+    <div *ngIf="!userId">Loading...</div>
+</div>
+<div  class="container" *ngIf="!isLoged">
+    Please Login to add new video!
+</div>
+
+

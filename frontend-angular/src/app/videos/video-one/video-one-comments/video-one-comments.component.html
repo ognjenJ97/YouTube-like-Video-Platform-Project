@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="col">
+        <div class="row" style="display: flex; justify-content: space-between; width: 100%;">
+            <div class="container_owner"> 
+
+                <div style="display: flex; flex-direction: row; width: 100%;">
+                  <div class="circle">
+                    <span class="initial">{{ firstLetter }}</span>
+                  </div>
+                  <p [routerLink]="'/profile/' + comment.ownerId" style="font-weight: bold;">{{ comment.ownerUsername }}</p>
+                </div>
+                <div class="col" style="width: 220px;">
+                  <span [ngClass]="commentLiked ? 'like' : null" (click)="handleAddLike(true)">
+                    Likes: {{ likeCount }}
+                  </span>
+                  <span [ngClass]="commentDisliked ? 'dislike' : null" (click)="handleAddLike(false)" >
+                    Dislikes: {{ dislikeCount }}
+                  </span>
+                </div>
+
+              </div>
+        </div>
+        <div class="content_container">
+          <div>{{comment.content}}</div>
+          <div style="font-size: 30px; color: rgb(179, 179, 179);" (click)="onDelete()" *ngIf="isCommentOwner() || isVideoOwner()">
+            X
+          </div>
+        </div>
+
+    </div>
+</div>

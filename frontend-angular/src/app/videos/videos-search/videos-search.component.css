@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+
+.video_select {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video_select select {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    font-weight: normal;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 10px;
+  }
+
+  .video_select select option {
+    display: flex;
+    justify-content: center;
+  }

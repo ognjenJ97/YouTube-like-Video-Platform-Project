@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    min-height: 130px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.container_owner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .initial {
+    color: white;
+    font-weight: bold;
+  }
+
+  .like {
+    color: rgb(10, 109, 202);
+  }
+
+  .dislike {
+    color: red;
+  }
+
+  .content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+  }

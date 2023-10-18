@@ -1,0 +1,108 @@
+<div *ngIf="!profile">Loading..</div>
+
+<div *ngIf="profile" style="border-bottom: 1px solid rgb(154, 154, 154);">
+    <p>Popular videos:</p>
+    <div class="list_box" *ngIf="videosPopularHtml.length !== 0">
+      <div [ngClass]="{'button': true, 'button_block': minPopular <= 0}" (click)="onLessPopular()">Prev page</div>
+        <div *ngFor="let videosEl of videosPopularHtml">
+            <div class="container" [routerLink]="'/videos/' + videosEl.id">
+                <div class="thumbnail">
+                    <img [src]="videosEl.thumbnailUrl" alt="Thumbnail">
+                </div>
+            
+                <div>
+                  <p class="title">{{ videosEl.title }}</p>
+                </div>
+                <div class="owner-views">
+                  <p>{{ videosEl.ownerUsername }}</p>
+                  <p style="width: 200px;">{{ videosEl.views.toLocaleString() }} views</p>
+                </div>
+              </div>
+        </div>
+        <div [ngClass]="{'button': true, 'button_block': maxPopular >= videosPopular.length}" (click)="onMorePopular()">Next page</div>
+      </div>
+      <div *ngIf="videosPopularHtml.length === 0">
+        No videos to find!
+      </div>
+</div>
+
+<div *ngIf="profile" style="border-bottom: 1px solid rgb(154, 154, 154);">
+    <p>Newest videos:</p>
+    <div class="list_box" *ngIf="videosDateHtml.length !== 0">
+        <div [ngClass]="{'button': true, 'button_block': minDate <= 0}" (click)="onLessDate()">Prev page</div>
+        <div *ngFor="let videosEl of videosDateHtml" >
+            <div class="container" [routerLink]="'/videos/' + videosEl.id">
+                <div class="thumbnail">
+                    <img [src]="videosEl.thumbnailUrl" alt="Thumbnail">
+                </div>
+            
+                <div>
+                  <p class="title">{{ videosEl.title }}</p>
+                </div>
+                <div class="owner-views">
+                  <p>{{ videosEl.ownerUsername }}</p>
+                  <p style="width: 200px;">{{ videosEl.views.toLocaleString() }} views</p>
+                </div>
+              </div>
+        </div>
+        <div [ngClass]="{'button': true, 'button_block': maxDate >= videosDate.length}" (click)="onMoreDate()">Next page</div>
+      </div>
+      <div *ngIf="videosDateHtml.length === 0">
+        No videos to find!
+      </div>
+</div>
+
+
+<div *ngIf="profile && isAdmin || isOwner" style="border-bottom: 1px solid rgb(154, 154, 154);">
+    <p>Private:</p>
+    <div class="list_box" *ngIf="videosPrivateHtml.length !== 0">
+        <div [ngClass]="{'button': true, 'button_block': minPrivate <= 0}" (click)="onLessPrivate()">Prev page</div>
+        <div *ngFor="let videosEl of videosPrivateHtml">
+            <div class="container" [routerLink]="'/videos/' + videosEl.id">
+                <div class="thumbnail">
+                    <img [src]="videosEl.thumbnailUrl" alt="Thumbnail">
+                </div>
+            
+                <div>
+                  <p class="title">{{ videosEl.title }}</p>
+                </div>
+                <div class="owner-views">
+                  <p>{{ videosEl.ownerUsername }}</p>
+                  <p style="width: 200px;">{{ videosEl.views.toLocaleString() }} views</p>
+                </div>
+              </div>
+        </div>
+        <div [ngClass]="{'button': true, 'button_block': maxPrivate >= videosPrivate.length}" (click)="onMorePrivate()">Next page</div>
+      </div>
+      <div *ngIf="videosPrivateHtml.length === 0">
+        No videos to find!
+      </div>
+</div>
+
+
+<div *ngIf="profile && isAdmin || isOwner" style="border-bottom: 1px solid rgb(154, 154, 154);">
+    <p>Blocked videos:</p>
+    <div class="list_box" *ngIf="videosBlockedHtml.length !== 0">
+        <div [ngClass]="{'button': true, 'button_block': minBlocked <= 0}" (click)="onLessBlocked()">Prev page</div>
+        <div *ngFor="let videosEl of videosBlockedHtml">
+            <div class="container" [routerLink]="'/videos/' + videosEl.id">
+                <div class="thumbnail">
+                    <img [src]="videosEl.thumbnailUrl" alt="Thumbnail">
+                </div>
+            
+                <div>
+                  <p class="title">{{ videosEl.title }}</p>
+                </div>
+                <div class="owner-views">
+                  <p>{{ videosEl.ownerUsername }}</p>
+                  <p style="width: 200px;">{{ videosEl.views.toLocaleString() }} views</p>
+                </div>
+              </div>
+        </div>
+        <div [ngClass]="{'button': true, 'button_block': maxBlocked >= videosBlocked.length}" (click)="onMoreBlocked()">Next page</div>
+      </div>
+      <div *ngIf="videosBlockedHtml.length === 0">
+        No videos to find!
+      </div>
+</div>
+

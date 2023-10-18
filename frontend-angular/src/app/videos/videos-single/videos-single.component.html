@@ -1,0 +1,13 @@
+<div class="container" (click)="onSingleVideo()">
+    <div class="thumbnail">
+        <img [src]="video.thumbnailUrl" alt="Thumbnail">
+    </div>
+
+    <div>
+      <p class="title">{{ video.title }}</p>
+    </div>
+    <div class="owner-views">
+      <p [routerLink]="'/profile/' + video.ownerId">{{ video.ownerUsername }}</p>
+      <p style="width: 200px;">{{ video.views.toLocaleString() }} views</p>
+    </div>
+  </div>

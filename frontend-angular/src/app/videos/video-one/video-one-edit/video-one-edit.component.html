@@ -1,0 +1,89 @@
+
+
+<div *ngIf="!video">Loading...</div>
+
+<div *ngIf="video" class="container" style="padding-top: 100px;">
+    <h3>Edit video:</h3>
+    <hr>
+    <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+  
+      <!-- Naslov, URL i Thumbnail za vlasnika -->
+      <div *ngIf="isOwner">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" class="form-control" [(ngModel)]="title" required>
+          <hr>
+        </div>
+
+        <div class="form-group">
+          <label for="videoUrl">Video URL</label>
+          <input type="text" id="videoUrl" name="videoUrl" class="form-control" [(ngModel)]="videoUrl" required>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="thumbnailUrl">Thumbnail URL</label>
+          <input type="text" id="thumbnailUrl" name="thumbnailUrl" class="form-control" [(ngModel)]="thumbnailUrl" required>
+        </div>
+      </div>
+      <hr>
+
+            <!-- Admin može da vidi naslov, ali ne može da ga menja -->
+            <div *ngIf="isAdmin">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" id="title" name="title" class="form-control" [(ngModel)]="title" readonly>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label for="videoUrl">Video URL</label>
+                  <input type="text" id="videoUrl" name="videoUrl" class="form-control" [(ngModel)]="videoUrl" readonly>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label for="thumbnailUrl">Thumbnail URL</label>
+                  <input type="text" id="thumbnailUrl" name="thumbnailUrl" class="form-control" [(ngModel)]="thumbnailUrl" readonly>
+                </div>
+              </div>
+              <hr>
+
+              
+      <!-- Opis, Vidljivost i Komentari za sve korisnike -->
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" class="form-control" [(ngModel)]="description" required>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="visibility">Visibility</label>
+        <select id="visibility" name="visibility" class="form-control" [(ngModel)]="visibility">
+            <option [ngValue]="'PUBLIC'">Public</option>
+            <option [ngValue]="'PRIVATE'">Private</option>
+          </select>
+      </div>
+      <hr>
+      <div class="form-check">
+        <input type="checkbox" id="allowComments" name="allowComments" class="form-check-input" [(ngModel)]="allowComments">
+        <label for="allowComments" class="form-check-label">Allow Comments</label>
+      </div>
+      <hr>
+      <div class="form-check">
+        <input type="checkbox" id="showRatings" name="showRatings" class="form-check-input" [(ngModel)]="showRatings">
+        <label for="showRatings" class="form-check-label">Show Ratings</label>
+      </div>
+      <hr>
+
+      <!-- Admin može da menja blokiranje -->
+      <div *ngIf="isAdmin">
+        <div class="form-check">
+          <input type="checkbox" id="blocked" name="blocked" class="form-check-input" [(ngModel)]="blocked">
+          <label for="blocked" class="form-check-label">Blocked</label>
+        </div>
+      </div>
+      <hr>
+      <button type="submit" class="btn btn-primary" style="width: 120px;">Save</button>
+    </form>
+
+    <div *ngIf="isOwner" style="margin-top: 20px;" >
+        <button type="button" class="btn btn-danger" style="width: 120px;" (click)="onDelete()">Delete video</button>
+    </div>
+  </div>

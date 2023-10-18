@@ -1,0 +1,14 @@
+<p>Explore more channels..</p>
+<hr>
+
+<div class="row">
+    <div class="col-xs-12">
+      <app-single-channel
+        *ngFor="let channelEl of channels"
+        [channel]="channelEl"></app-single-channel>
+    </div>
+  </div>
+
+<hr>
+<button class="btn btn-success" type="button" *ngIf="loadMoreButton" (click)="onLoadMore()">Load more channels..</button>
+<p *ngIf="!loadMoreButton">No more to load...</p>

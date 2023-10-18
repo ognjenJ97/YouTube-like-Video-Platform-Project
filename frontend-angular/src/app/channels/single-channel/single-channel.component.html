@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="col">
+      <div class="circle">
+        <span [routerLink]="'/profile/' + channel.id" class="initial">{{ channel.username.charAt(0) }}</span>
+      </div>
+    </div>
+    <div class="col">
+      <span [routerLink]="'/profile/' + channel.id" class="username">{{ channel.username }}'s channel</span>
+    </div>
+  </div>

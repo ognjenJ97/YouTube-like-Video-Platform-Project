@@ -1,0 +1,51 @@
+<div *ngIf="profile">
+    <div class="container-box">
+
+        <div style="margin-right: 100px;">
+            <h2>Subscribers</h2>
+            <div *ngFor="let subs of subscribers" >
+                <div class="container">
+
+                  <div class="container2">
+                    <div class="col">
+                      <div class="circle">
+                        <span [routerLink]="'/profile/' + subs.id" class="initial">{{ subs.username.charAt(0) }}</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <span [routerLink]="'/profile/' + subs.id" class="username">{{ subs.username }}'s channel</span>
+                    </div>
+                  </div>
+    
+                  </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Subscriptions</h2>
+            <div *ngFor="let subs of subscriptions" >
+              <div class="container">
+
+                <div class="container2">
+                  <div class="col">
+                    <div class="circle">
+                      <span [routerLink]="'/profile/' + subs.id" class="initial">{{ subs.username.charAt(0) }}</span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span [routerLink]="'/profile/' + subs.id" class="username">{{ subs.username }}'s channel</span>
+                  </div>
+                </div>
+
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div *ngIf="!profile">
+    loading...
+</div>

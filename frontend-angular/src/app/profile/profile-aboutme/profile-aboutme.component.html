@@ -1,0 +1,10 @@
+<div *ngIf="profile" style="font-size: 20px;">
+    <p>Firstname: {{profile.firstName}}</p>
+    <p>Lastname: {{profile.lastName}}</p>
+    <p>Email: {{profile.email}}</p>
+    <p>Member since: {{ profile.registrationDate | date:'dd.MM.yyyy' }}</p>
+</div>
+
+<div *ngIf="!profile">
+    loading...
+</div>

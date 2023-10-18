@@ -1,0 +1,40 @@
+<div class="container" *ngIf="profile">
+        <div class="profile_header">
+
+            <div class="profile_header_username">
+                <div class="circle">
+                    <span class="initial">{{profile.username.charAt(0)}}</span>
+                </div>
+
+                <p class="username">{{profile.username}}</p>
+
+                <div *ngIf="isAuth">
+                    <div *ngIf="!isOwner" style="margin-left: 30px;">
+                        <button *ngIf="!isSubscribed" (click)="subscribe()" type="button" class="btn btn-danger">Subscribe</button>
+                        <button *ngIf="isSubscribed" (click)="unsubscribe()" type="button" class="btn btn-danger">Unsubscribe</button>
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+            <div class="subs_detail">
+                <p style="width: auto; margin-right: 15px;">Subscribers: {{subscribers.length}}</p>
+                <p style="width: auto;">Subscriptions: {{subscriptions.length}}</p>
+            </div>
+
+        </div>
+        <div class="profile_buttons">
+            <p routerLink="videos">Videos</p>
+            <p routerLink="subscribers">Subscribers</p>
+            <p routerLink="aboutme">About me</p>
+            <p *ngIf="userLogInId === profileId" routerLink="/addVideo">Add video</p>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+
+
+<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;" *ngIf="!profile">
+    <app-loading-spinner></app-loading-spinner>
+</div>

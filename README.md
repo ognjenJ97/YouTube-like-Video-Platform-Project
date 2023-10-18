@@ -18,7 +18,7 @@
 
 - Backend: The project utilizes Java with a service layer, implementation, repository, DTO objects, and controllers to manage and process user data and requests. The backend server is configured to run on port 8080.
 
-- Frontend: The frontend is built using React, offering a user-friendly interface for uploading, interacting with videos, and managing user accounts.
+- Frontend: The frontend is built using React(first version) and Angular(second version), offering a user-friendly interface for uploading, interacting with videos, and managing user accounts.
 
 ## Installation
 
